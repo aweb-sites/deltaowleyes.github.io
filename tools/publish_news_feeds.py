@@ -177,7 +177,7 @@ def main():
     write_if_changed(ROOT / "feed.xml", xml_string(rss))
 
     main = ET.Element("{" + SM + "}urlset")
-    static = ["/", "/news/", "/trctracker/",
+    static = ["/", "/news/",
               "/investigations/trc-calls-to-action-audit-2026.html",
               "/education/", "/grants/",
               "/indigenous-businesses/", "/indigenous-churches/", "/events/",
