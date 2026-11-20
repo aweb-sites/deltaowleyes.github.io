@@ -52,6 +52,7 @@ def header_for(page: pathlib.Path) -> str:
     left = links([("/news/", "News"), ("https://trctracker.ca/", "94 Calls")])
     explore = links([
         ("/education/", "Education"),
+        ("/grants/", "Grants &amp; Funding"),
         ("/videos/", "Videos"),
         ("/#investigations", "Investigations"),
         ("/news/", "Newsroom"),
@@ -77,7 +78,8 @@ def header_for(page: pathlib.Path) -> str:
         ("Explore", [
             ("/", "Home"), ("/news/", "Latest news"),
             ("https://trctracker.ca/", "94 Calls to Action"),
-            ("/education/", "Education"), ("/videos/", "Videos"),
+            ("/education/", "Education"), ("/grants/", "Grants &amp; Funding"),
+            ("/videos/", "Videos"),
             ("/#investigations", "Investigations"),
         ]),
         ("Community", [
