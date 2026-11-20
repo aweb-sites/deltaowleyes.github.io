@@ -2,7 +2,7 @@
 """Audit the 94 Call to Action teleprompter drafts without publishing them."""
 import json, pathlib, re, sys
 ROOT=pathlib.Path(__file__).resolve().parents[1]
-FOLDER=ROOT/"calls-to-action"/"scripts"
+FOLDER=ROOT/"trctracker"/"scripts"
 LABEL=re.compile(r"^\*\*(LEAH|CHRIS):\*\*$",re.M)
 def audit(n):
     p=FOLDER/f"{n:02d}.md"

@@ -35,8 +35,8 @@ def header_for(page: pathlib.Path) -> str:
         active = "/" + rel.split("/")[0] + "/"
     if rel.startswith("news/"):
         active = "/news/"
-    elif rel.startswith("calls-to-action/"):
-        active = "/calls-to-action/"
+    elif rel.startswith("trctracker/"):
+        active = "/trctracker/"
     elif rel.startswith("events/"):
         active = "/events/"
     elif rel.startswith("indigenous-businesses/"):
@@ -51,13 +51,13 @@ def header_for(page: pathlib.Path) -> str:
     def links(entries: list[tuple[str, str]]) -> str:
         return "".join(menu(h, t, active) for h, t in entries)
 
-    left = links([("/news/", "News"), ("/calls-to-action/", "94 Calls")])
+    left = links([("/news/", "News"), ("/trctracker/", "94 Calls")])
     explore = links([
         ("/education/", "Education"),
         ("/videos/", "Videos"),
         ("/#investigations", "Investigations"),
         ("/news/", "Newsroom"),
-        ("/calls-to-action/", "TRC research"),
+        ("/trctracker/", "TRC research"),
     ])
     community = links([
         ("/indigenous-businesses/", "Businesses"),
@@ -78,7 +78,7 @@ def header_for(page: pathlib.Path) -> str:
     mobile_groups = [
         ("Explore", [
             ("/", "Home"), ("/news/", "Latest news"),
-            ("/calls-to-action/", "94 Calls to Action"),
+            ("/trctracker/", "94 Calls to Action"),
             ("/education/", "Education"), ("/videos/", "Videos"),
             ("/#investigations", "Investigations"),
         ]),
