@@ -179,6 +179,7 @@ def main():
     main = ET.Element("{" + SM + "}urlset")
     static = ["/", "/news/", "/trctracker/",
               "/investigations/trc-calls-to-action-audit-2026.html",
+              "/education/", "/grants/",
               "/indigenous-businesses/", "/indigenous-churches/", "/events/",
               "/services/", "/privacy/"]
     for path in static + [urllib.parse.urlsplit(s["url"]).path for s in stories]:
