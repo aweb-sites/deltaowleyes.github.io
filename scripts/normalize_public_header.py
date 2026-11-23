@@ -8,8 +8,8 @@ import re
 import sys
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
-LOGO = "/assets/doe-header-wordmark-250x55.png?v=b4037f"
-SYMBOL = "/assets/doe-header-symbol-75x55.png?v=b4037f"
+LOGO = "/assets/brand/doe-wordmark.svg?v=owl1"
+SYMBOL = "/assets/brand/doe-owl-mark.svg?v=owl1"
 HEADER_CSS = '<link rel="stylesheet" href="/assets/header-v3.css?v=b4037f">'
 HEADER_JS = '<script defer src="/assets/header-v3.js?v=b4037c"></script>'
 FOOTER_MOTTO = '<div class="doe-footer-motto" aria-label="Delta Owl Eyes motto">HARD TRUTHS. &nbsp; EDUCATION. &nbsp; ACCOUNTABILITY.</div>'
@@ -100,7 +100,7 @@ def header_for(page: pathlib.Path) -> str:
         '<header class="doe-header doe-header-v3">'
         f'<nav class="doe-header-left" aria-label="Quick navigation">'
         f'<a class="doe-left-symbol" href="/" aria-label="Delta Owl Eyes home">'
-        f'<img src="{SYMBOL}" alt="Medicine wheel, great grey owl and red-tailed hawk" width="75" height="55"></a>'
+        f'<img src="{SYMBOL}" alt="Great grey owl, the Delta Owl Eyes logo" width="75" height="55"></a>'
         f'{left}</nav>'
         f'<a class="doe-center-brand" href="/" aria-label="Delta Owl Eyes home">'
         f'<img src="{LOGO}" alt="Delta Owl Eyes" width="250" height="55" decoding="async"></a>'
