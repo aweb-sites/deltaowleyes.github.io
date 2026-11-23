@@ -232,7 +232,8 @@ html body header.doe-header-v3 .doe-left-symbol img{
   width:100%!important;height:auto!important;max-height:55px!important;object-fit:contain!important
  }
  html body header.doe-header-v3 .doe-center-brand{
-  width:min(250px,calc(100vw - 155px))!important;
+  /* Nov 23 BAKE spiffy: was 100vw - 155px, which ran the wordmark into the Menu button on 375-400px phones */
+  width:min(250px,calc(100vw - 190px))!important;
   height:55px!important;min-height:55px!important
  }
  html body header.doe-header-v3 .doe-center-brand img{
