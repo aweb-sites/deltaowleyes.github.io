@@ -12,7 +12,7 @@
 .app-home .app-tile:hover{transform:translateY(-3px);box-shadow:0 9px 22px #143b381b!important}
 .app-home .app-tile span{font-size:.66rem!important}
 .app-home .app-tile h2{font-size:clamp(1rem,1.4vw,1.2rem)!important;margin:7px 0 5px!important}
-.app-home .app-tile p{font-size:.95rem!important;line-height:1.45!important;margin-bottom:11px!important}
+.app-home .app-tile p{font-size:1rem!important;line-height:1.5!important;margin-bottom:11px!important}
 .app-home .app-tile b{font-size:.81rem!important}
 .app-home .app-columns{margin-top:14px!important;gap:14px!important}
 .app-home .app-panel,.app-home .app-about{border-radius:16px!important;border:1px solid #d4e3dc!important;box-shadow:0 4px 18px #143b380b!important}
