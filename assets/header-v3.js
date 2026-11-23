@@ -2,6 +2,8 @@
 document.addEventListener('DOMContentLoaded',()=>{
  const header=document.querySelector('header.doe-header-v3');
  if(!header)return;
+ // Frosted pill as a real layer (same look as the CSS ::before fallback, which stays for no-JS).
+ if(!header.querySelector(':scope>.doe-pill')){const pill=document.createElement('span');pill.className='doe-pill';pill.setAttribute('aria-hidden','true');header.prepend(pill);header.classList.add('has-pill');}
  // Discovery 4.0: expose Grants in the shared Explore menus, including legacy pages.
  const menusToEnhance=[
   header.querySelector('.doe-header-right .doe-menu-panel'),
